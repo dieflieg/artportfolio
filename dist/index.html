@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Кватя</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
 <body>
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - One Page Scroller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artportfolio</title>
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
@@ -48,6 +43,14 @@
       <div class="container">
         <div class="row">
 
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <img id="modalImage" src="" alt="Enlarged Image">
+            </div>
+          </div>
+
+
         <!начало контейнера!>
         <div id="carousel-example-generic" class="carousel slide" >
           <!-- Indicators -->
@@ -58,13 +61,15 @@
           </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
+         <div class="carousel-inner" role="listbox">
             <div class="item active">
               <div class="col-md-3">
                 <div photo-card>
 
+
+                  
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-79.userapi.com/impg/Dg2hVVRC14PvgqAuoKKrEHNGdURwvVYDLZaXUg/iEg9XF9mHgQ.jpg?size=1240x1748&quality=96&sign=467377eaa7190ffa9c52f51c1f0f9e64&type=album')" />
+                    <img src="/img/1.jpg" onclick="openModal('/img/1.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -76,7 +81,7 @@
                 <div photo-card>
                 
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-10.userapi.com/impg/JjIfGxdR5q2wr3bBKQzuyQWuSwIxd09eozWjRQ/n1Jfmy2ytB0.jpg?size=1530x2160&quality=96&sign=e7d7d7522b7e5cd02bbbfab696d515fd&type=album')" />
+                    <img src="/img/2.jpg" onclick="openModal('/img/2.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -89,7 +94,7 @@
                 <div photo-card>
 
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-70.userapi.com/impg/IlmsVIukeAv4z_pKmmE8zQatXdBLGSBJLlfEGw/cemOa9wF2so.jpg?size=1873x2160&quality=96&sign=304800c5820a1900c72f4e1ad61b93aa&type=album')" />
+                    <img src="/img/3.jpg" onclick="openModal('/img/3.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -102,7 +107,7 @@
                 <div photo-card>
               
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-38.userapi.com/impg/R2RXRT2jU_xPrP5Q5wLEIaz_56JH9neqBE3IAw/nlgTqp4D0xE.jpg?size=1530x2160&quality=96&sign=b1a60542652c748ab675c374f3d87450&type=album')" />
+                    <img src="/img/4.jpg" onclick="openModal('/img/4.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -117,7 +122,7 @@
                 <div photo-card>
                   
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-42.userapi.com/impg/qJsXuewvwWtOzZSnSAb2c_H5Uv9wR74OZKxyvA/r1-046Pv5kg.jpg?size=1240x1748&quality=96&sign=6822f61caed9826927cad6d767cf617c&type=album')" />
+                    <img src="/img/5.jpg" onclick="openModal('/img/5.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -131,7 +136,7 @@
                   
 
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-1.userapi.com/impg/UQO27nru_-SzQzz6TUBFCcqR3iHPcuQqsL69vA/90sEsZhdJZU.jpg?size=1240x1748&quality=96&sign=51d81a4f9f76fed672759f1b24df42cb&type=album')" />
+                    <img src="/img/6.jpg" onclick="openModal('/img/6.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -145,7 +150,7 @@
                   
 
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-46.userapi.com/impg/ZuZXNS7uBj1H7-7FSvWoxpkhDMdQ17VCnhSdVw/hNNBo0T01mE.jpg?size=1240x1748&quality=96&sign=bee767116403a4a91a1255fd2fbb20da&type=album')" />
+                    <img src="/img/7.jpg" onclick="openModal('/img/7.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -159,7 +164,7 @@
                   
 
                   <div class="pc-media">
-                    <img style="background-image: url('https://sun9-30.userapi.com/impg/4oFL7Su1vFZ4ueyb7veGQMWBylihS1d4nIFutg/z9S9ifFzwlY.jpg?size=1530x2160&quality=96&sign=4d180ba8d4c9cfba0d059d3607465323&type=album')" />
+                    <img src="/img/8.jpg" onclick="openModal('/img/8.jpg')">
                   </div>
 
                   <div class="tweet-text">
@@ -197,12 +202,39 @@
       <p>mems</p>
 </footer>
 <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<script>
+  function openModal(imageSrc) {
+    var modal = document.getElementById('myModal');
+    var modalImage = document.getElementById('modalImage');
+
+    // Show the modal
+    modal.style.display = 'block';
+
+    // Set the image source
+    modalImage.src = imageSrc;
+
+    // Add a click event listener to the modal overlay
+    modal.addEventListener('click', function (event) {
+      // Check if the click is outside the modal content
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+  function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+  }
+</script>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
 </body>
 </html>
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
 </body>
 </html>
