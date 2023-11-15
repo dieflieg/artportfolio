@@ -51,7 +51,7 @@ body::after {
 }
 p {
 margin-left: 5%;
-font-size: 1.5em;
+font-size: 0.9em;
 }
 a {
   text-decoration: none;
@@ -215,17 +215,16 @@ footer p {
 
 
 .contacts-social {
-  display: flex;
+  
   column-gap: 8px;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 600px;
-
+  width: 300px;
+  padding-left: -300px;
 }
 
 .icons-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100px;
 }
