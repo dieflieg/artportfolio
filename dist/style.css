@@ -30,6 +30,7 @@ body {
   font-family: 'Open Sans';
   font-size: 2em;
   position: relative;
+  
 }
 body::before,
 body::after {
@@ -49,7 +50,8 @@ body::after {
   right: 0;
 }
 p {
-margin-left: 40px;
+margin-left: 5%;
+font-size: 1.5em;
 }
 a {
   text-decoration: none;
@@ -87,10 +89,10 @@ a {
 .title {
   position: relative;
   display: block;
-  margin-left: 40px;
+  margin-left: 5%;
   top: -50px;
   padding: 10px;
-  font-size: 1.9em;
+  font-size: 2em;
   color: brown;
 }
 .title:before {
@@ -126,13 +128,14 @@ a {
 }
 footer {
   min-height: 20px;
-  padding: 10px;
+  padding: 5%;
   background: white;
 }
 footer p {
   margin-left: 235px;
 }
 .icons {
+  
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -140,18 +143,31 @@ footer p {
   cursor: pointer;
   vertical-align: middle;
 }
+
+.icons:first-child {
+  margin-left: 50%; /* Set the margin for the first icon */
+  transform: translateX(-50%); /* Center the first icon using translateX */
+}
 [photo-card] {
   margin-top: 70px;
   margin-bottom: 70px;
   background-color: white;
 }
 [photo-card] .pc-media {
-  height: 438px;
   align-items: center;
   display: flex;
   overflow: hidden; /* Add overflow: hidden to the container to hide the overflow */
 }
 
+/* Adjust the height of [photo-card] .tweet-text */
+[photo-card] .tweet-text {
+  padding-bottom: 10px;
+  overflow: hidden;
+  height: auto;
+  padding: 20px;
+}
+
+/* Add styles to make the images stretch across the entire width */
 [photo-card] .pc-media img {
   margin: auto;
   width: 100%;
@@ -169,33 +185,12 @@ footer p {
   transform: scale(1.2); /* Adjust the scale factor as per your preference */
 }
 
-[photo-card] .tweet-text {
-  padding-bottom: 10px;
-  overflow: hidden;
-  height: auto;
-  padding: 20px;
-}
-
 /* Modal styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 800px;
-  max-height: 80%;
-}
+  max-width: 40%;
+  }
 
 .modal-content img {
   width: 100%;
