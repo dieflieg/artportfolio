@@ -132,6 +132,14 @@ footer {
 footer p {
   margin-left: 235px;
 }
+.icons {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
 [photo-card] {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -225,11 +233,4 @@ footer p {
   justify-content: center;
   align-items: center;
   height: 100px;
-}
-
-.icons {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  cursor: pointer;
 }
