@@ -53,7 +53,7 @@ margin-left: 40px;
 }
 a {
   text-decoration: none;
-  color: #012827;
+  color:  #012827;
 }
 #nav {
   background: white;
@@ -72,10 +72,10 @@ a {
   padding: 10px;
 }
 #nav li:hover {
-  background: #79A2B3;
+  background: #F49807;
 }
 #nav li:hover a {
-  color: #012827;
+  color: #E65617;
 }
 .content {
   padding-top: 50px;
@@ -91,6 +91,7 @@ a {
   top: -50px;
   padding: 10px;
   font-size: 1.9em;
+  color: brown;
 }
 .title:before {
   
@@ -206,4 +207,29 @@ footer p {
 
 .carousel-control {
   opacity: 0.3;
+}
+
+
+
+.contacts-social {
+  display: flex;
+  column-gap: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 600px;
+
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  cursor: pointer;
 }
